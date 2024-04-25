@@ -1,0 +1,5 @@
+create table member
+	(idx bigint primary key auto_increment, id varchar(20)  unique not null, pw varchar(20) not null
+	    ,name varchar(20) not null, nickname varchar(20) unique not null
+		,email varchar(40) unique not null, phone varchar(30), addr1 varchar(40) not null, addr2 varchar(40) not null
+        ,point int not null);

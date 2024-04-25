@@ -1,0 +1,13 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<!--컨트롤러에서 받아온 변수 적용하기/ inline 사용-->
+<script th:inline="javascript">
+    /*<![CDATA[*/
+
+    var message = [[${message}]]
+    alert(message);
+
+    location.replace([[${searchUrl}]]);  <!--페이지 이동 + 이동 경로-->
+
+    /*]]>*/
+</script>
